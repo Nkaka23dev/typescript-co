@@ -14,53 +14,20 @@
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"screen\": () => (/* binding */ screen)\n/* harmony export */ });\nconst firstInput = document.querySelector(\"#first-input\");\nconst secondInput = document.querySelector(\"#second-input\");\nconst screen = document.querySelector(\".screen\");\nconst btn = document.querySelector(\".button\");\nfunction addNumbers(a, b) {\n    screen.innerHTML = (a + b).toString();\n}\nbtn === null || btn === void 0 ? void 0 : btn.addEventListener('click', () => addNumbers(parseInt(firstInput.value), parseInt(secondInput.value)));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXgudHMuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLE1BQU0sVUFBVSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsY0FBYyxDQUFxQixDQUFDO0FBQzlFLE1BQU0sV0FBVyxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsZUFBZSxDQUFxQixDQUFFO0FBQ3pFLE1BQU0sTUFBTSxHQUFHLFFBQVEsQ0FBQyxhQUFhLENBQUMsU0FBUyxDQUFDLENBQUM7QUFDekQsTUFBTSxHQUFHLEdBQUcsUUFBUSxDQUFDLGFBQWEsQ0FBQyxTQUFTLENBQUMsQ0FBQztBQUU5QyxTQUFTLFVBQVUsQ0FBQyxDQUFTLEVBQUUsQ0FBUztJQUNwQyxNQUFPLENBQUMsU0FBUyxHQUFHLENBQUMsQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDLFFBQVEsRUFBRSxDQUFDO0FBQzNDLENBQUM7QUFDRCxHQUFHLGFBQUgsR0FBRyx1QkFBSCxHQUFHLENBQUUsZ0JBQWdCLENBQUMsT0FBTyxFQUFFLEdBQUcsRUFBRSxDQUFDLFVBQVUsQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLEtBQUssQ0FBQyxFQUN6RSxRQUFRLENBQUMsV0FBVyxDQUFDLEtBQUssQ0FBQyxDQUFDLENBQUMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL2NvcmUtdHlwZXMvLi9zcmMvaW5kZXgudHM/ZmZiNCJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBmaXJzdElucHV0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIiNmaXJzdC1pbnB1dFwiKSBhcyBIVE1MSW5wdXRFbGVtZW50O1xyXG5jb25zdCBzZWNvbmRJbnB1dCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIjc2Vjb25kLWlucHV0XCIpIGFzIEhUTUxJbnB1dEVsZW1lbnQgO1xyXG5leHBvcnQgIGNvbnN0IHNjcmVlbiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuc2NyZWVuXCIpO1xyXG5jb25zdCBidG4gPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKFwiLmJ1dHRvblwiKTsgXHJcblxyXG5mdW5jdGlvbiBhZGROdW1iZXJzKGE6IG51bWJlciwgYjogbnVtYmVyKXtcclxuICAgIHNjcmVlbiEuaW5uZXJIVE1MID0gKGEgKyBiKS50b1N0cmluZygpO1xyXG59XHJcbmJ0bj8uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCAoKSA9PiBhZGROdW1iZXJzKHBhcnNlSW50KGZpcnN0SW5wdXQudmFsdWUpLFxyXG4gcGFyc2VJbnQoc2Vjb25kSW5wdXQudmFsdWUpKSk7XHJcblxyXG5cclxuXHJcblxyXG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/index.ts\n");
+eval("\nconst reviews = [\n    {\n        name: 'Sheia',\n        stars: 5,\n        loyaltyUser: true,\n        date: '01-04-2021'\n    },\n    {\n        name: 'Andrzej',\n        stars: 3,\n        loyaltyUser: false,\n        date: '28-03-2021'\n    },\n    {\n        name: 'Omar',\n        stars: 4,\n        loyaltyUser: true,\n        date: '27-03-2021'\n    },\n];\nconst reviewsContains = document.querySelector('#reviews');\nconst reviewsTotal = (reviewsNumber, reviewer) => {\n    reviewsContains.innerHTML = `Total reviews: ${reviewsNumber.toString()} |\r\n   Last reviewed by ${reviewer}`;\n};\nreviewsTotal(reviews.length, reviews[0].name);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXgudHMuanMiLCJtYXBwaW5ncyI6IjtBQUFBLE1BQU0sT0FBTyxHQUFHO0lBQ1o7UUFDSSxJQUFJLEVBQUUsT0FBTztRQUNiLEtBQUssRUFBRSxDQUFDO1FBQ1IsV0FBVyxFQUFFLElBQUk7UUFDakIsSUFBSSxFQUFFLFlBQVk7S0FDckI7SUFDRDtRQUNJLElBQUksRUFBRSxTQUFTO1FBQ2YsS0FBSyxFQUFFLENBQUM7UUFDUixXQUFXLEVBQUUsS0FBSztRQUNsQixJQUFJLEVBQUUsWUFBWTtLQUNyQjtJQUNEO1FBQ0ksSUFBSSxFQUFFLE1BQU07UUFDWixLQUFLLEVBQUUsQ0FBQztRQUNSLFdBQVcsRUFBRSxJQUFJO1FBQ2pCLElBQUksRUFBRSxZQUFZO0tBQ3JCO0NBQ0o7QUFFRCxNQUFNLGVBQWUsR0FBRyxRQUFRLENBQUMsYUFBYSxDQUFDLFVBQVUsQ0FBQyxDQUFDO0FBRTNELE1BQU0sWUFBWSxHQUFHLENBQUMsYUFBcUIsRUFBRSxRQUFnQixFQUFFLEVBQUU7SUFDOUQsZUFBZ0IsQ0FBQyxTQUFTLEdBQUcsa0JBQWtCLGFBQWEsQ0FBQyxRQUFRLEVBQUU7c0JBQ3BELFFBQVEsRUFBRSxDQUFDO0FBQ2pDLENBQUM7QUFDRCxZQUFZLENBQUMsT0FBTyxDQUFDLE1BQU0sRUFBRSxPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jb3JlLXR5cGVzLy4vc3JjL2luZGV4LnRzP2ZmYjQiXSwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgcmV2aWV3cyA9IFtcclxuICAgIHtcclxuICAgICAgICBuYW1lOiAnU2hlaWEnLFxyXG4gICAgICAgIHN0YXJzOiA1LFxyXG4gICAgICAgIGxveWFsdHlVc2VyOiB0cnVlLFxyXG4gICAgICAgIGRhdGU6ICcwMS0wNC0yMDIxJ1xyXG4gICAgfSxcclxuICAgIHsgXHJcbiAgICAgICAgbmFtZTogJ0FuZHJ6ZWonLFxyXG4gICAgICAgIHN0YXJzOiAzLFxyXG4gICAgICAgIGxveWFsdHlVc2VyOiBmYWxzZSxcclxuICAgICAgICBkYXRlOiAnMjgtMDMtMjAyMSdcclxuICAgIH0sXHJcbiAgICB7XHJcbiAgICAgICAgbmFtZTogJ09tYXInLFxyXG4gICAgICAgIHN0YXJzOiA0LFxyXG4gICAgICAgIGxveWFsdHlVc2VyOiB0cnVlLFxyXG4gICAgICAgIGRhdGU6ICcyNy0wMy0yMDIxJ1xyXG4gICAgfSxcclxuXSBcclxuXHJcbmNvbnN0IHJldmlld3NDb250YWlucyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJyNyZXZpZXdzJyk7XHJcblxyXG5jb25zdCByZXZpZXdzVG90YWwgPSAocmV2aWV3c051bWJlcjogbnVtYmVyLCByZXZpZXdlcjogc3RyaW5nKSA9PiB7XHJcbiAgIHJldmlld3NDb250YWlucyEuaW5uZXJIVE1MID0gYFRvdGFsIHJldmlld3M6ICR7cmV2aWV3c051bWJlci50b1N0cmluZygpfSB8XHJcbiAgIExhc3QgcmV2aWV3ZWQgYnkgJHtyZXZpZXdlcn1gO1xyXG59IFxyXG5yZXZpZXdzVG90YWwocmV2aWV3cy5sZW5ndGgsIHJldmlld3NbMF0ubmFtZSk7Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/index.ts\n");
 
 /***/ })
 
 /******/ 	});
-/************************************************************************/
-/******/ 	// The require scope
-/******/ 	var __webpack_require__ = {};
-/******/ 	
-/************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /************************************************************************/
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval-source-map devtool is used.
 /******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/index.ts"](0, __webpack_exports__, __webpack_require__);
+/******/ 	__webpack_modules__["./src/index.ts"]();
 /******/ 	
 /******/ })()
 ;
