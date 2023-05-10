@@ -17,7 +17,22 @@ const reviews = [
         loyaltyUser: true,
         date: '27-03-2021'
     },
-] 
+]  
+
+
+const you: {
+    firstName: string;
+    lastName: string;
+    isReturning: boolean;
+    age: number;
+    stayedAt: (string | number)[];
+} = {
+    firstName: "Eric",
+    lastName: "Nkaka",
+    isReturning: true,
+    age: 54,
+    stayedAt: ["Kigali", "Kicukiro", "Rwamagana","Nyamirambo",67]
+}
 
 const reviewsContains = document.querySelector('#reviews');
 
@@ -27,3 +42,6 @@ const reviewsTotal = (reviewsNumber: number, reviewer: string, isLoyalUser: bool
    Last reviewed by ${reviewer} ${iconDisplay}`;
 } 
 reviewsTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
+
+
+console.log(you)
