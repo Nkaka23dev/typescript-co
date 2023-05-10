@@ -21,8 +21,9 @@ const reviews = [
 
 const reviewsContains = document.querySelector('#reviews');
 
-const reviewsTotal = (reviewsNumber: number, reviewer: string) => {
+const reviewsTotal = (reviewsNumber: number, reviewer: string, isLoyalUser: boolean) => {
+   const iconDisplay = isLoyalUser? '⭐': '';
    reviewsContains!.innerHTML = `Total reviews: ${reviewsNumber.toString()} |
-   Last reviewed by ${reviewer}`;
+   Last reviewed by ${reviewer} ${iconDisplay}`;
 } 
-reviewsTotal(reviews.length, reviews[0].name);
+reviewsTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
