@@ -1,14 +1,20 @@
-const firstInput = document.querySelector("#first-input") as HTMLInputElement;
-const secondInput = document.querySelector("#second-input") as HTMLInputElement ;
-export  const screen = document.querySelector(".screen");
-const btn = document.querySelector(".button"); 
-
-function addNumbers(a: number, b: number){
-    screen!.innerHTML = (a + b).toString();
+const person: {
+    name: string;
+    age:number;
+    hobbies: string[];
+    role: [number, string] 
+} = {
+    name: "Nkaka",
+    age: 27,
+    hobbies: ["basketball", "Music", "reading book", "dancing"],
+    role: [7, "author"]
 }
-btn?.addEventListener('click', () => addNumbers(parseInt(firstInput.value),
- parseInt(secondInput.value)));
 
+// a tuple can't be reassigned
+// person.role = ["author", "hehehe"]
 
+console.log(person.role)
 
-
+person.hobbies.forEach(value => {
+    console.log(value.toUpperCase())
+})
