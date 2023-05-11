@@ -1,14 +1,27 @@
-const firstInput = document.querySelector("#first-input") as HTMLInputElement;
-const secondInput = document.querySelector("#second-input") as HTMLInputElement ;
-export  const screen = document.querySelector(".screen");
-const btn = document.querySelector(".button"); 
-
-function addNumbers(a: number, b: number){
-    screen!.innerHTML = (a + b).toString();
+enum ROLES {
+    ADMIN = 'ADMIN',
+    AUTHOR = 10,
+    GUEST
 }
-btn?.addEventListener('click', () => addNumbers(parseInt(firstInput.value),
- parseInt(secondInput.value)));
 
+const person: {
+    name: string,
+    age: number,
+    hobbies: string[],
+    roles: ROLES
+}  = { 
+    name: "Eric Nkaka",
+    age: 23,
+    hobbies: ["Playing basketabll", "dancing", "listening to musing","singing"],
+    roles: ROLES.ADMIN 
+}
 
+if(person.roles === ROLES.ADMIN){
+    console.log("Yes this is an admin")
+}else{
+    console.log("No admin found!")
+}
 
-
+// for(let hobby of person.hobbies){
+//   console.log(hobby.toUpperCase())
+// }
