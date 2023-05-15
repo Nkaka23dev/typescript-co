@@ -1,14 +1,16 @@
-const firstInput = document.querySelector("#first-input") as HTMLInputElement;
-const secondInput = document.querySelector("#second-input") as HTMLInputElement ;
-export  const screen = document.querySelector(".screen");
-const btn = document.querySelector(".button"); 
+function add(input: number, input2: number): number{
+    return input + input2
+} 
 
-function addNumbers(a: number, b: number){
-    screen!.innerHTML = (a + b).toString();
+function printValue(value: string): void{
+   console.log("The printed value is: ", value);
 }
-btn?.addEventListener('click', () => addNumbers(parseInt(firstInput.value),
- parseInt(secondInput.value)));
 
+let funcresult: (a: number, b: number) => number;
+
+funcresult = add;
+
+console.log(funcresult(3,4))
 
 
 
