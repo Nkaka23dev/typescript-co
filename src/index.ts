@@ -1,27 +1,16 @@
-enum ROLES {
-    ADMIN = 'ADMIN',
-    AUTHOR = 10,
-    GUEST
+function add(input: number, input2: number): number{
+    return input + input2
+} 
+
+function printValue(value: string): void{
+   console.log("The printed value is: ", value);
 }
 
-const person: {
-    name: string,
-    age: number,
-    hobbies: string[],
-    roles: ROLES
-}  = { 
-    name: "Eric Nkaka",
-    age: 23,
-    hobbies: ["Playing basketabll", "dancing", "listening to musing","singing"],
-    roles: ROLES.ADMIN 
-}
+let funcresult: (a: number, b: number) => number;
 
-if(person.roles === ROLES.ADMIN){
-    console.log("Yes this is an admin")
-}else{
-    console.log("No admin found!")
-}
+funcresult = add;
 
-// for(let hobby of person.hobbies){
-//   console.log(hobby.toUpperCase())
-// }
+console.log(funcresult(3,4))
+
+
+
